@@ -1,0 +1,99 @@
+:root{
+--color-primario: #8449ae;
+--color-sec: #0f1724;
+--bg: #fff0f6; 
+--card-bg: #ffffff;
+--accent: #fe98ed;
+--texto: #0b1220;
+--radius: 12px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  background:var(--bg);
+  color:var(--texto);
+  line-height:1.4
+}
+.container{max-width:1000px; margin:0 auto; padding:1rem}
+.header-grid{display:grid; grid-template-columns:120px 1fr; gap:1rem; align-items:center}
+.foto-perfil{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid var(--color-primario)
+}
+.encabezado-texto h1{margin:0; font-size:1.6rem}
+.rol{margin:0.2rem 0 0.6rem; color:var(--color-primario); font-weight:600}
+.site-header{
+  background:linear-gradient(90deg, rgba(255,182,193,0.25), transparent); /* rosa claro */
+  padding:1rem 0
+}
+.card{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  padding:1rem;
+  margin:1rem 0;
+  box-shadow:0 4px 12px rgba(255,105,180,0.15) /* sombra rosada */
+}
+
+.toggle-btn{
+  display:block;
+  width:100%;
+  text-align:left;
+  padding:0.6rem 0.8rem;
+  margin:0.4rem 0;
+  border:none;
+  background:transparent;
+  font-size:1rem;
+  cursor:pointer
+}
+.toggle-btn:focus{outline:3px solid rgba(255,182,193,0.35)} /* rosado pastel */
+.panel{padding:0.6rem 0.8rem}
+
+.skills-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  list-style:none;
+  padding:0
+}
+.skill-item{
+  padding:0.45rem 0.7rem;
+  background:#fde6f2;
+  border-radius:8px;
+  cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease
+}
+.skill-item:focus{outline:2px dashed rgba(255,182,193,0.35)}
+.skill-item.is-highlight{
+  transform:translateY(-4px);
+  box-shadow:0 8px 18px rgba(255,105,180,0.2);
+  background:linear-gradient(90deg,var(--color-primario),var(--accent));
+  color:white
+}
+
+.site-footer{
+  padding:1rem 0;
+  text-align:center;
+  font-size:0.9rem;
+  color:#8a2e6e
+}
+
+body.modo-oscuro {
+  background: #2d1e2f;
+  color: #ffe8f8;
+}
+body.modo-oscuro .card {
+  background: #3a263c;
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.25);
+}
+
+
+/* Responsivo */
+@media (max-width:700px){
+  .header-grid{grid-template-columns:90px 1fr}
+  .container{padding:0.75rem}
+}

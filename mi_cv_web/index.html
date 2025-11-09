@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mi CV Web — Michell Ibarra</title>
+<button id="modoBtn" class="toggle-btn">🌙 Modo oscuro</button>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<script src="js/app.js"></script>
+</html>
+<body>
+<header class="site-header" role="banner">
+<div class="container header-grid">
+<div class="perfil-media">
+<img src="assets/perfil.png" alt="Foto de Nombre Apellido" class="foto-perfil">
+</div>
+<div class="encabezado-texto">
+<h1>Michell Ibarra Diaz</h1>
+<p class="rol">Desarrollador Web Jr - Tecnología Educativa Santillana .</p>
+<p class="contacto">📧 mmibarrad2@espe.edu.ec - mibarrad@clb.santillana.com • 📞 +593 98 359 475 </p>
+<p class="links-social">
+<a href="https://github.com/Michell0212" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a> •
+<a href="https://www.linkedin.com/in/ibarra-diaz-milena-michell-8b9785377" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+</p>
+</div>
+</div>
+</header>
+
+
+<main class="container" role="main">
+<!-- Perfil -->
+<section id="perfil" class="card" aria-labelledby="perfilTitle">
+<h2 id="perfilTitle">Perfil profesional</h2>
+<p> Estudiante de Ingenieria en Tecnologías de la información Sexto Semestre
+con interés en desarrollo web front-end y la inteligencia artificial en el mundo educativo.
+Trabajo en Santillana SA como Agente Tecnológico (Help Desk) y Desarolladora front-end</p>
+</section>
+
+
+<!-- Formación (acordeón) -->
+<section id="formacion" class="card" aria-labelledby="formacionTitle">
+<h2 id="formacionTitle">Formación académica</h2>
+
+
+<button class="toggle-btn" aria-expanded="false" aria-controls="edu1" data-target="#edu1">Grado: Ingeniería en Tecnologías de la información — Universidad de las Fuerzas Armadas ESPE</button>
+<div id="edu1" class="panel" hidden>
+<p>Periodo: 2022 — presente. Universidad de las Fuerzas Armadas ESPE - Pregrado Ingeniería en Tecnologías de la información</p>
+</div>
+
+</section>
+
+
+<!-- Experiencia / Proyectos (acordeón) -->
+<section id="proyectos" class="card" aria-labelledby="proyectosTitle">
+<h2 id="proyectosTitle">Experiencia y proyectos</h2>
+
+<button class="toggle-btn" aria-expanded="false" aria-controls="proj2" data-target="#proj2">Proyecto 1: Formulario Santillana x Chubb</button>
+<div id="proj2" class="panel" hidden>
+<p>Implementación de formularios dinámicos y conexión a backend. Logros: diseño modular, manejo de estados y validaciones.</p>
+</div>
+
+
+<button class="toggle-btn" aria-expanded="false" aria-controls="proj1" data-target="#proj1">Proyecto 2: Aplicacion OCR</button>
+<div id="proj1" class="panel" hidden>
+<p>Desarrollo de una aplicacion OCR Logros: En proceso</p>
+
+
+</div>
+
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Michell Ibarra — Todos los derechos reservados.</p>
+</footer>
+
+</html>
